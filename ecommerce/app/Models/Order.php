@@ -34,6 +34,6 @@ class Order extends Model
     // Define the relationship with the ShippingAddress model
     public function address()
     {
-        return $this->belongsTo(Address::class);
+        return $this->hasOne(Address::class);
     }
 }
